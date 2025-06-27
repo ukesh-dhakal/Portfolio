@@ -4,7 +4,10 @@ import { BackgroundLines } from '@/components/ui/background-lines'
 const Hero = () => {
   return (
     <div className="hero min-h-screen">
-      <BackgroundLines />
+      <BackgroundLines>
+        {/* You can put any content here, or an empty fragment if no<thing is needed */}
+        <></>
+      </BackgroundLines>
       <div className='z-10 m-10'>
         <h1 className="text-7xl font-bold">Ukesh <br/> Dhakal</h1>
         <p className="py-10 text-2xl">

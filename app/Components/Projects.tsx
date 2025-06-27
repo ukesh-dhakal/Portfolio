@@ -1,4 +1,5 @@
 import React from 'react';
+import type { JSX } from 'react';
 // Import specific icons from the react-icons library.
 // We are using icons from the 'Si' (Simple Icons) collection.
 import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql } from 'react-icons/si';
@@ -7,7 +8,7 @@ import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailw
  * A mapping of technology names to their corresponding icon components.
  * This makes it easy to add or change icons later.
  */
-const techIcons = {
+const techIcons: { [key: string]: JSX.Element } = {
   react: <SiReact className="text-cyan-400" />,
   nodejs: <SiNodedotjs className="text-green-500" />,
   mongodb: <SiMongodb className="text-green-600" />,
@@ -21,14 +22,16 @@ const techIcons = {
 /**
  * ProjectCard component displays individual project details with technology icons.
  * It also includes hover effects and links for both GitHub and a live demo.
- * @param {object} props - The component props.
- * @param {string} props.title - The title of the project.
- * @param {string} props.description - A brief description of the project.
- * @param {string[]} props.technologies - An array of technology names to display icons for.
- * @param {string} props.githubLink - The URL to the project's GitHub repository.
- * @param {string} props.liveLink - The URL to the project's live demo.
  */
-const ProjectCard = ({ title, description, technologies, githubLink, liveLink }) => {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubLink: string;
+  liveLink: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, githubLink, liveLink }) => {
   return (
     // Card container with enhanced padding, shadow, rounded corners, and hover effects.
     <div className=" rounded-lg shadow-xl p-8 flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-gray-100">
