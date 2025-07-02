@@ -13,7 +13,7 @@ const AboutMe = () => {
       
      
       <p className="text-lg text-white leading-relaxed break-words">
-        I am Ukesh Dhakal, a passionate and driven individual from Kathmandu, always eager to learn new things and gain new experiences. I am currently pursuing a BIT at the International American University, Model Institute Of Technology. I have a strong foundation in both front-end and back-end development, with expertise in a variety of technologies and frameworks.
+        I am Ukesh Dhakal, a passionate and driven individual from Kathmandu, always eager to learn new things and gain new experiences. I am currently pursuing a BIT at the International American University. I have a strong foundation in both front-end and back-end development, with expertise in a variety of technologies and frameworks.
       </p>
 
     </div>
