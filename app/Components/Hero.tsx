@@ -86,7 +86,7 @@ const Hero = () => {
         <p className="text-2xl">
           Passionate for developing modern responsive <br/> web applications and technology .
         </p>
-        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://smallpdf.com/file#s=a77706ba-0936-4a73-8de7-fdec0a06e94e">Download Resume</a>
+        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://smallpdf.com/file#s=84b65336-5b22-40bb-9679-3f76d8bba822">Download Resume</a>
       </div>
     </div>
   )
