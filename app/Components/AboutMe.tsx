@@ -27,7 +27,7 @@ const AboutMe = () => {
             alt="Ukesh Dhakal"
             width={320}
             height={320}
-            className="rounded-lg shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover" // Added object-cover for better image fitting
+            className="rounded-lg shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover" 
           />
         </div>
       </div>
