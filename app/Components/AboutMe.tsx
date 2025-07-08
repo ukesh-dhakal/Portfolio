@@ -9,7 +9,7 @@ const AboutMe = () => {
         About Me
       </h1>
 
-  \
+  
       <div className="flex flex-col-reverse items-center justify-center md:flex-row md:space-x-8">
         {/* Paragraph */}
         <p className="text-lg text-white mt-6 md:mt-0 leading-relaxed break-words text-center md:text-left md:w-1/2">
