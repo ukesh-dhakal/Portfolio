@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Photo from '../../public/Photo.jpg'; // Adjust the path as necessary
+import Photo from '../../public/Photo.jpg'; 
 
 const AboutMe = () => {
   return (
