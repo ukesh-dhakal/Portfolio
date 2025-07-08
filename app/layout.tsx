@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Concert_One } from "next/font/google"; // Import Concert_One
 import "./globals.css";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +11,14 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+
+const concertOne = Concert_One({
+  weight: "400", 
+  variable: "--font-concert-one",
+  subsets: ["latin"],
+  display: "swap", 
 });
 
 export const metadata: Metadata = {
@@ -26,13 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/Logo.ico" />
-
+        <link rel="icon" href="/Logo.ico" />
       </head>
       <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${concertOne.variable} antialiased`}
       >
-      {children}
+        {children}
       </body>
     </html>
   );
