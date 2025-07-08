@@ -13,12 +13,7 @@ const AboutMe = () => {
       <div className="flex flex-col-reverse items-center justify-center md:flex-row md:space-x-8">
         {/* Paragraph */}
         <p className="text-lg text-white mt-6 md:mt-0 leading-relaxed break-words text-center md:text-left md:w-1/2">
-          👋 Hey there! I'm Ukesh Dhakal, a passionate and driven individual from Kathmandu 🇳🇵, always eager to learn new things and gain fresh experiences. I'm currently pursuing my BIT at Model Institute of Technology which is affilated to the International American University (IAU) 📚. <br/>
-          <br/>
-          I have a strong foundation in both front-end and back-end development, with expertise in technologies like HTML/CSS 🎨, JavaScript, React, Node.js, MongoDB, and MySQL. My skills also include responsive design, Figma, Git, Linux, and Firebase. <br/>
-          <br/>
-          I've brought ideas to life through projects like a Live Code Editor for HTML, CSS, and JS, an Event Management System, a Front-end Food Delivery Site 🍔, and an E-commerce Site for a hackathon. I'm proud to have placed 3rd in the Saral Hackathon 2023 🥉 and 1st in Tech Trix Nepal 2023 🥇!
-        </p>
+👋 Hey there! I'm Ukesh Dhakal, a passionate and driven BIT student at Model Institute of Technology (affiliated with IAU) in Kathmandu 🇳🇵. I have a strong foundation in both front-end and back-end development, with expertise in technologies like HTML/CSS 🎨, JavaScript, React, Node.js, MongoDB, and MySQL, alongside skills in responsive design, Figma, Git, Linux, and Firebase. I've brought ideas to life through projects like a Live Code Editor, an Event Management System, a Front-end Food Delivery Site 🍔, and an E-commerce Site, proudly placing 3rd in Saral Hackathon 2023 🥉 and 1st in Tech Trix Nepal 2023 🥇.        </p>
 
     
         <div className="flex-shrink-0 md:w-1/2 flex justify-center">
