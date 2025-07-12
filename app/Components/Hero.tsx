@@ -26,7 +26,7 @@ const Hero = () => {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/ukesh-dhakal-b496b1327/"
+            href="https://www.linkedin.com/in/ukesh-dhakal/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-transform hover:scale-110 hover:text-blue-600"
@@ -86,7 +86,7 @@ const Hero = () => {
         <p className="text-2xl">
           Passionate for developing modern responsive <br/> web applications and technology .
         </p>
-        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://smallpdf.com/file#s=84b65336-5b22-40bb-9679-3f76d8bba822">Download Resume</a>
+        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://drive.google.com/file/d/1nFYfW9-JcTuyfEmpZJ3LGahh5ChJKtqI/view?usp=sharing">Download Resume</a>
       </div>
     </div>
   )
