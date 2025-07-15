@@ -35,6 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/Logo.ico" />
+        <meta name="google-site-verification" content="GScWdwaSpYwuwmD8xPTET3Xdol1-NRVzEdNWPweiGSo" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${concertOne.variable} antialiased`}
