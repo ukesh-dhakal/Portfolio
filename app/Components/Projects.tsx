@@ -3,7 +3,7 @@ import type { JSX } from 'react';
 // Import specific icons from the react-icons library.
 // We are using icons from the 'Si' (Simple Icons) collection.
 // Import SiFirebase here.
-import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiFirebase } from 'react-icons/si';
+import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiFirebase ,SiNext} from 'react-icons/si';
 
 /**
  * A mapping of technology names to their corresponding icon components.
@@ -18,8 +18,8 @@ const techIcons: { [key: string]: JSX.Element } = {
   javascript: <SiJavascript className="text-yellow-400" />,
   tailwind: <SiTailwindcss className="text-cyan-500" />,
   mysql: <SiMysql className="text-blue-600" />,
-  // Add the Firebase icon here.
   firebase: <SiFirebase className="text-yellow-500" />,
+    next: <SiNext className="text-white" />,
 };
 
 /**
