@@ -72,12 +72,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
   );
 };
 
-/**
- * Projects component displays a collection of project cards.
- * It features a grid layout that adapts to different screen sizes.
- */
+
 const Projects = () => {
-  // Array of project data, now including the Hackathon project and a 'liveLink' property.
+
   const projects = [
     {
       id: 1,
@@ -85,7 +82,7 @@ const Projects = () => {
       description: 'A live code editor built using Vanilla HTML, JavaScript, and Tailwind CSS, allowing real-time preview of web development code.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind'],
       githubLink: 'https://github.com/ukesh-dhakal/LivecodeEditor-For-HTML-CSS-and-JS',
-      liveLink: 'https://ukesh-dhakal.github.io/LivecodeEditor-For-HTML-CSS-and-JS/' // Example live link
+      liveLink: 'https://ukesh-dhakal.github.io/LivecodeEditor-For-HTML-CSS-and-JS/' 
     },
     {
       id: 2,
@@ -93,7 +90,7 @@ const Projects = () => {
       description: 'A full-stack web application for event management, developed with React, Tailwind CSS, Node.js, and MongoDB.',
       technologies: ['React', 'Tailwind', 'Node.js', 'MongoDB'],
       githubLink: 'https://github.com/ukesh-dhakal/EDULearner',
-      liveLink: '' // Add your live demo link here
+      liveLink: '' 
     },
     
     {
@@ -102,7 +99,15 @@ const Projects = () => {
       description: 'An e-commerce site developed for a hackathon using vanilla HTML, JavaScript, and MySQL.',
       technologies: ['HTML', 'JavaScript', 'MySQL'],
       githubLink: 'https://github.com/ukesh-dhakal/Saral-Hackathon',
-      liveLink: 'https://ecomart-hackathon.netlify.app/' // Example live link
+      liveLink: 'https://ecomart-hackathon.netlify.app/' 
+    },
+     {
+      id: 5,
+      title: 'Kathmandu Review (Work in progrss)',
+      description: 'A site made for addingg review and rate stuffs',
+      technologies: ['HTML', 'Next, 'Firebase'],
+    
+      liveLink: 'https://www.kathmandureview.com/' 
     },
   ];
 
