@@ -110,9 +110,15 @@ const Projects = () => {
       id: 5,
       title: 'Kathmandu Review (Work in progrss)',
       description: 'A site made for addingg review and rate stuffs',
-      technologies: ['Next', 'Firebase'], // Add firebase to technologies array.
-      // Add githubLink if available
+      technologies: ['Next', 'Firebase'], 
       liveLink: 'https://www.kathmandureview.com/'
+    },
+    {
+      id: 6,
+      title: 'Portfolio made for MP Gyanendra Shahi (Work in progrss)',
+      description: 'A site made for MP of Nepal Gyanendra Shahi with a backend in firebase and content management.It is a work in progress and site is yet to be deployed',
+      technologies: ['Next', 'tailwind', 'Firebase'], 
+      liveLink: 'https://gyanendra-shahi-portfolio.vercel.app/'
     },
   ];
 
