@@ -1,14 +1,7 @@
 import React from 'react';
 import type { JSX } from 'react';
-// Import specific icons from the react-icons library.
-// We are using icons from the 'Si' (Simple Icons) collection.
-// Import SiFirebase here.
-import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiFirebase ,SiNextdotjs} from 'react-icons/si';
+import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiFirebase, SiNextdotjs } from 'react-icons/si';
 
-/**
- * A mapping of technology names to their corresponding icon components.
- * This makes it easy to add or change icons later.
- */
 const techIcons: { [key: string]: JSX.Element } = {
   react: <SiReact className="text-cyan-400" />,
   nodejs: <SiNodedotjs className="text-green-500" />,
@@ -19,45 +12,36 @@ const techIcons: { [key: string]: JSX.Element } = {
   tailwind: <SiTailwindcss className="text-cyan-500" />,
   mysql: <SiMysql className="text-blue-600" />,
   firebase: <SiFirebase className="text-yellow-500" />,
-    Nextjs: <SiNextdotjs className="text-white" />,
+  next: <SiNextdotjs className="text-white" />,
 };
 
-/**
- * ProjectCard component displays individual project details with technology icons.
- * It also includes hover effects and links for both GitHub and a live demo.
- */
 interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  githubLink?: string; // Made optional
-  liveLink?: string; // Made optional
+  githubLink?: string;
+  liveLink?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, githubLink, liveLink }) => {
   return (
-    // Card container with enhanced padding, shadow, rounded corners, and hover effects.
     <div className=" rounded-lg shadow-xl p-8 flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-gray-100">
       <h3 className="text-2xl font-bold text-white  mb-3">{title}</h3>
       <p className="text-white mb-4 flex-grow leading-relaxed">{description}</p>
-
-      {/* Container for technology icons, with consistent spacing */}
-      <div className="flex flex-wrap items-center gap-4 mb-6"> {/* Increased mb-5 to mb-6 */}
+      <div className="flex flex-wrap items-center gap-4 mb-6">
         {technologies.map((tech, index) => (
           <div key={index} className="text-4xl" title={tech}>
             {techIcons[tech.toLowerCase()] || <span className="text-sm font-medium text-gray-500">{tech}</span>}
           </div>
         ))}
       </div>
-
-      {/* Buttons for GitHub and Live Demo, with flexible layout */}
-      <div className="flex flex-col sm:flex-row gap-4 mt-auto"> {/* Changed to flex-col on small screens, flex-row on larger */}
+      <div className="flex flex-col sm:flex-row gap-4 mt-auto">
         {liveLink && (
           <a
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 inline-block bg-green-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-green-700 transition-colors duration-300 text-center text-lg" // Increased padding and font size
+            className="flex-1 inline-block bg-green-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-green-700 transition-colors duration-300 text-center text-lg"
           >
             Live Demo
           </a>
@@ -67,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex-1 inline-block bg-blue-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 text-center text-lg ${!liveLink ? 'w-full' : ''}`} // Increased padding and font size
+            className={`flex-1 inline-block bg-blue-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 text-center text-lg ${!liveLink ? 'w-full' : ''}`}
           >
             View on GitHub
           </a>
@@ -76,7 +60,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
     </div>
   );
 };
-
 
 const Projects = () => {
 
@@ -97,7 +80,14 @@ const Projects = () => {
       githubLink: 'https://github.com/ukesh-dhakal/EDULearner',
       liveLink: ''
     },
-
+    {
+      id: 3,
+      title: 'E-commerce Frontend',
+      description: 'A modern e-commerce front-end application built for learning about and consuming RESTful APIs. This project focuses on building a responsive UI and managing data flow.',
+      technologies: ['Next', 'Tailwind'],
+      githubLink: 'https://github.com/ukesh-dhakal/E-com-Site',
+      liveLink: 'e-com-site-six.vercel.app'
+    },
     {
       id: 4,
       title: 'E-commerce Site Made for a Hackathon',
@@ -110,25 +100,23 @@ const Projects = () => {
       id: 5,
       title: 'Kathmandu Review (Work in progrss)',
       description: 'A site made for addingg review and rate stuffs',
-      technologies: ['Next', 'Firebase'], 
+      technologies: ['Next', 'Firebase'],
       liveLink: 'https://www.kathmandureview.com/'
     },
     {
       id: 6,
       title: 'Portfolio made for MP Gyanendra Shahi (Work in progrss)',
       description: 'A site made for MP of Nepal Gyanendra Shahi with a backend in firebase and content management.It is a work in progress and site is yet to be deployed',
-      technologies: ['Next', 'tailwind', 'Firebase'], 
+      technologies: ['Next', 'tailwind', 'Firebase'],
       liveLink: 'https://gyanendra-shahi-portfolio.vercel.app/'
     },
   ];
 
   return (
-    <section id="projects" className="max-w-6xl mx-auto my-20 px-4 sm:px-6 lg:px-8"> {/* Increased my-16 to my-20 for more vertical spacing */}
-      <h2 className="text-4xl underline-offset-4 underline font-extrabold text-center text-white mb-12 sm:text-5xl tracking-wide"> {/* Added tracking-wide */}
+    <section id="projects" className="max-w-6xl mx-auto my-20 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-4xl underline-offset-4 underline font-extrabold text-center text-white mb-12 sm:text-5xl tracking-wide">
         My Projects
       </h2>
-
-      {/* Grid container for project cards, responsive layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <ProjectCard
