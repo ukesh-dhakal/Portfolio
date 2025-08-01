@@ -2,7 +2,8 @@ import React from 'react';
 import type { JSX } from 'react';
 // Import specific icons from the react-icons library.
 // We are using icons from the 'Si' (Simple Icons) collection.
-import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql } from 'react-icons/si';
+// Import SiFirebase here.
+import { SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiMysql, SiFirebase } from 'react-icons/si';
 
 /**
  * A mapping of technology names to their corresponding icon components.
@@ -17,6 +18,8 @@ const techIcons: { [key: string]: JSX.Element } = {
   javascript: <SiJavascript className="text-yellow-400" />,
   tailwind: <SiTailwindcss className="text-cyan-500" />,
   mysql: <SiMysql className="text-blue-600" />,
+  // Add the Firebase icon here.
+  firebase: <SiFirebase className="text-yellow-500" />,
 };
 
 /**
@@ -27,8 +30,8 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  githubLink: string;
-  liveLink: string;
+  githubLink?: string; // Made optional
+  liveLink?: string; // Made optional
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, githubLink, liveLink }) => {
@@ -59,14 +62,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technolog
             Live Demo
           </a>
         )}
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex-1 inline-block bg-blue-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 text-center text-lg ${!liveLink ? 'w-full' : ''}`} // Increased padding and font size
-        >
-          View on GitHub
-        </a>
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex-1 inline-block bg-blue-600 text-white font-semibold py-3 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 text-center text-lg ${!liveLink ? 'w-full' : ''}`} // Increased padding and font size
+          >
+            View on GitHub
+          </a>
+        )}
       </div>
     </div>
   );
@@ -82,7 +87,7 @@ const Projects = () => {
       description: 'A live code editor built using Vanilla HTML, JavaScript, and Tailwind CSS, allowing real-time preview of web development code.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind'],
       githubLink: 'https://github.com/ukesh-dhakal/LivecodeEditor-For-HTML-CSS-and-JS',
-      liveLink: 'https://ukesh-dhakal.github.io/LivecodeEditor-For-HTML-CSS-and-JS/' 
+      liveLink: 'https://ukesh-dhakal.github.io/LivecodeEditor-For-HTML-CSS-and-JS/'
     },
     {
       id: 2,
@@ -90,24 +95,24 @@ const Projects = () => {
       description: 'A full-stack web application for event management, developed with React, Tailwind CSS, Node.js, and MongoDB.',
       technologies: ['React', 'Tailwind', 'Node.js', 'MongoDB'],
       githubLink: 'https://github.com/ukesh-dhakal/EDULearner',
-      liveLink: '' 
+      liveLink: ''
     },
-    
+
     {
       id: 4,
       title: 'E-commerce Site Made for a Hackathon',
       description: 'An e-commerce site developed for a hackathon using vanilla HTML, JavaScript, and MySQL.',
       technologies: ['HTML', 'JavaScript', 'MySQL'],
       githubLink: 'https://github.com/ukesh-dhakal/Saral-Hackathon',
-      liveLink: 'https://ecomart-hackathon.netlify.app/' 
+      liveLink: 'https://ecomart-hackathon.netlify.app/'
     },
-     {
+    {
       id: 5,
       title: 'Kathmandu Review (Work in progrss)',
       description: 'A site made for addingg review and rate stuffs',
-      technologies: ['HTML', 'Next'],
-    
-      liveLink: 'https://www.kathmandureview.com/' 
+      technologies: ['Next', 'Firebase'], // Add firebase to technologies array.
+      // Add githubLink if available
+      liveLink: 'https://www.kathmandureview.com/'
     },
   ];
 
@@ -116,7 +121,7 @@ const Projects = () => {
       <h2 className="text-4xl underline-offset-4 underline font-extrabold text-center text-white mb-12 sm:text-5xl tracking-wide"> {/* Added tracking-wide */}
         My Projects
       </h2>
-      
+
       {/* Grid container for project cards, responsive layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
