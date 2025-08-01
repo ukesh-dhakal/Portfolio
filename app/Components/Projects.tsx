@@ -105,7 +105,7 @@ const Projects = () => {
       id: 5,
       title: 'Kathmandu Review (Work in progrss)',
       description: 'A site made for addingg review and rate stuffs',
-      technologies: ['HTML', 'Next, 'Firebase'],
+      technologies: ['HTML', 'Next'],
     
       liveLink: 'https://www.kathmandureview.com/' 
     },
