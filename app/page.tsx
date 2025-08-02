@@ -22,14 +22,15 @@ const items = [
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-black overflow-hidden">
-      {/* Sticky left Dock */}
-      <div className="sticky top-0 h-screen md:hidden flex items-center z-50">
-        <Dock 
-          items={items}
-          panelHeight={420}
-          baseItemSize={50}
-          magnification={70}
-        />
+    
+     <div className="hidden md:flex sticky top-0 h-screen items-center z-50">
+  <Dock 
+    items={items}
+    panelHeight={420}
+    baseItemSize={50}
+    magnification={70}
+  />
+
       </div>
       {/* Main content */}
       <div className="flex-1">
