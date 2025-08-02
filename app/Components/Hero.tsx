@@ -1,13 +1,12 @@
 import React from 'react'
-import { BackgroundLines } from '@/components/ui/background-lines'
+import DarkVeil from '@/Reactbits/DarkVeil/DarkVeil'
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen">
-      <BackgroundLines>
-        {/* You can put any content here, or an empty fragment if no<thing is needed */}
-        <></>
-      </BackgroundLines>
+    <div className="hero min-h-screen text-white" id="hero">
+      
+        <DarkVeil />
+      
       <div className='z-10 m-10'>
         <h1 className="text-7xl font-bold">Ukesh <br/> Dhakal</h1>
         <p className="py-10 text-2xl">
@@ -86,7 +85,7 @@ const Hero = () => {
         <p className="text-2xl">
           Passionate for developing modern responsive <br/> web applications and technology .
         </p>
-        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://drive.google.com/file/d/1nFYfW9-JcTuyfEmpZJ3LGahh5ChJKtqI/view?usp=sharing">Download Resume</a>
+        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://drive.google.com/file/d/1Zc3pPql1UDJbWZnJ0EPlxm3uJfL-TEbH/view?usp=sharing">Download Resume</a>
       </div>
     </div>
   )
