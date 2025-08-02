@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen bg-black overflow-hidden">
       {/* Sticky left Dock */}
-      <div className="sticky top-0 h-screen flex items-center z-50">
+      <div className="sticky top-0 h-screen md:hidden flex items-center z-50">
         <Dock 
           items={items}
           panelHeight={420}
