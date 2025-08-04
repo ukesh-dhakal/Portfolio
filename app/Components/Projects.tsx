@@ -98,14 +98,14 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Kathmandu Review (Work in progrss)',
+      title: 'Kathmandu Review (Work in progress)',
       description: 'A site made for addingg review and rate stuffs with admin panel for managing reviews and ratings. It is a work in progress and site is yet to be deployed',
       technologies: ['Next', 'Firebase'],
       liveLink: 'https://www.kathmandureview.com/'
     },
     {
       id: 6,
-      title: 'Portfolio made for MP Gyanendra Shahi (Work in progrss)',
+      title: 'Portfolio made for MP Gyanendra Shahi (Work in progress)',
       description: 'A site made for MP of Nepal Gyanendra Shahi with a backend in firebase and content management.It is a work in progress and site is yet to be deployed',
       technologies: ['Next', 'tailwind', 'Firebase'],
       liveLink: 'https://gyanendra-shahi-portfolio.vercel.app/'
