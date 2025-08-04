@@ -86,7 +86,7 @@ const Hero = () => {
         <p className="text-2xl">
           Passionate for developing modern responsive <br/> web applications and technology .
         </p>
-        <a className='btn btn-accent mt-8 p-7 animate-bounce text-xl' href="https://drive.google.com/file/d/1Zc3pPql1UDJbWZnJ0EPlxm3uJfL-TEbH/view?usp=sharing">Download Resume</a>
+        <a className='btn btn-accent mt-8 p-7  text-xl' href="https://drive.google.com/file/d/1Zc3pPql1UDJbWZnJ0EPlxm3uJfL-TEbH/view?usp=sharing">Download Resume</a>
       </div>
     </div>
   )
