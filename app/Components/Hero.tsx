@@ -1,5 +1,6 @@
 import React from 'react'
 import DarkVeil from '@/Reactbits/DarkVeil/DarkVeil'
+import { HyperText } from '@/components/magicui/hyper-text'
 
 const Hero = () => {
   return (
@@ -9,9 +10,9 @@ const Hero = () => {
       
       <div className='z-10 m-10'>
         <h1 className="text-7xl font-bold">Ukesh <br/> Dhakal</h1>
-        <p className="py-10 text-2xl">
-          Font-End Developer | UI/UX Designer | <br/>
-        </p>
+        <HyperText className="py-10 text-2xl">
+          Font-End Developer | UI/UX Designer | 
+        </HyperText>
         <div className="flex flex-wrap justify-start gap-6 mb-8">
           <a
             href="https://instagram.com/why.is.ukesh"
@@ -85,7 +86,7 @@ const Hero = () => {
         <p className="text-2xl">
           Passionate for developing modern responsive <br/> web applications and technology .
         </p>
-        <a className='btn btn-accent mt-8 p-7 text-xl' href="https://drive.google.com/file/d/1Zc3pPql1UDJbWZnJ0EPlxm3uJfL-TEbH/view?usp=sharing">Download Resume</a>
+        <a className='btn btn-accent mt-8 p-7 animate-bounce text-xl' href="https://drive.google.com/file/d/1Zc3pPql1UDJbWZnJ0EPlxm3uJfL-TEbH/view?usp=sharing">Download Resume</a>
       </div>
     </div>
   )

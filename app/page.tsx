@@ -7,6 +7,7 @@ import { ContactUs } from "./Components/ContactMe";
 import Footer from "./Components/Footer";
 import Dock from "@/Reactbits/Dock/Dock";
 import { VscHome, VscAccount, VscProject, VscTools, VscMail, VscFilePdf } from "react-icons/vsc";
+import { BlurFade } from "@/components/magicui/blur-fade";
 
 const iconProps = { size: 22, color: "#fff" };
 
@@ -22,34 +23,49 @@ const items = [
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-black overflow-hidden">
-    
-     <div className="hidden md:flex sticky top-0 h-screen items-center z-50">
-  <Dock 
-    items={items}
-    panelHeight={420}
-    baseItemSize={50}
-    magnification={70}
-  />
-
+      {/* Dock for desktop viewports */}
+      <div className="hidden md:flex sticky top-0 h-screen items-center z-50">
+        <Dock
+          items={items}
+          panelHeight={420}
+          baseItemSize={50}
+          magnification={70}
+        />
       </div>
+
       {/* Main content */}
       <div className="flex-1">
         <section id="hero">
-          <Hero/>
+          <BlurFade delay={0.25}>
+            <Hero />
+          </BlurFade>
         </section>
+        
         <section id="about">
-          <AboutMe/>
+          <BlurFade delay={0.25} inView>
+            <AboutMe />
+          </BlurFade>
         </section>
+
         <section id="projects">
-          <Projects/>
+          <BlurFade delay={0.25} inView>
+            <Projects />
+          </BlurFade>
         </section>
+
         <section id="skills">
-          <Skills/>
+          <BlurFade delay={0.25} inView>
+            <Skills />
+          </BlurFade>
         </section>
+
         <section id="contact">
-          <ContactUs/>
+          <BlurFade delay={0.25} inView>
+            <ContactUs />
+          </BlurFade>
         </section>
-        <Footer/>
+
+        <Footer />
       </div>
     </div>
   );
