@@ -71,7 +71,6 @@ const Hero = () => {
               <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.867 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.579.688.481C19.135 20.203 22 16.447 22 12.021 22 6.484 17.523 2 12 2z"/>
             </svg>
           </a>
-          <img src="[[https://spotify-github-profile.kittinanx.com/api/view.svg?uid=317dtavgsxwwm5jvkviexkhityay&redirect=true][https://spotify-github-profile.kittinanx.com/api/view.svg?uid=317dtavgsxwwm5jvkviexkhityay&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true)]]"></img>
           <a
             href="https://open.spotify.com/user/317dtavgsxwwm5jvkviexkhityay"
             target="_blank"
@@ -87,6 +86,38 @@ const Hero = () => {
         <p className="text-2xl">
           Passionate for developing modern responsive <br/> web applications and technology .
         </p>
+         <a
+      href="https://open.spotify.com/user/317dtavgsxwwm5jvkviexkhityay"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: "inline-block",
+        padding: "12px",
+        borderRadius: "16px",
+        background: "#181818",
+        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)",
+        transition: "transform 0.2s ease, box-shadow 0.2s ease",
+      }}
+      onMouseOver={(e) => {
+        e.currentTarget.style.transform = "scale(1.03)";
+        e.currentTarget.style.boxShadow = "0 6px 25px rgba(0, 0, 0, 0.6)";
+      }}
+      onMouseOut={(e) => {
+        e.currentTarget.style.transform = "scale(1)";
+        e.currentTarget.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.5)";
+      }}
+    >
+      <img
+        src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=317dtavgsxwwm5jvkviexkhityay&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=true"
+        alt="Now Playing on Spotify"
+        style={{
+          borderRadius: "12px",
+          display: "block",
+          width: "100%",
+          maxWidth: "400px",
+        }}
+      />
+    </a>
         <a className='btn btn-accent mt-8 p-7  text-xl' href="https://drive.google.com/file/d/1Zc3pPql1UDJbWZnJ0EPlxm3uJfL-TEbH/view?usp=sharing">Download Resume</a>
       </div>
     </div>
