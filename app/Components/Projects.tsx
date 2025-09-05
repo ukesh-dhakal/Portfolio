@@ -86,7 +86,7 @@ const Projects = () => {
       description: 'A modern e-commerce front-end application built for learning about and consuming RESTful APIs. This project focuses on building a responsive UI and managing data flow.',
       technologies: ['Next', 'Tailwind'],
       githubLink: 'https://github.com/ukesh-dhakal/E-com-Site',
-      liveLink: 'e-com-site-six.vercel.app'
+      liveLink: 'https://e-com-site-six.vercel.app/'
     },
     {
       id: 4,
@@ -108,7 +108,7 @@ const Projects = () => {
       title: 'Portfolio made for MP Gyanendra Shahi (Work in progress)',
       description: 'A site made for MP of Nepal Gyanendra Shahi with a backend in firebase and content management.It is a work in progress and site is yet to be deployed',
       technologies: ['Next', 'tailwind', 'Firebase'],
-      liveLink: 'https://gyanendra-shahi-portfolio.vercel.app/'
+      liveLink: 'https://gyanendra-port-ukst.vercel.app/'
     },
   ];
 
