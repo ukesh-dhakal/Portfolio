@@ -40,12 +40,7 @@ export default function Home() {
             <Hero />
           </BlurFade>
         </section>
-        
-        <section id="about">
-          <BlurFade delay={0.25} inView>
-            <AboutMe />
-          </BlurFade>
-        </section>
+      
 
         <section id="projects">
           <BlurFade delay={0.25} inView>
