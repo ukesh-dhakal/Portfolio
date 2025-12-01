@@ -93,7 +93,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'E-commerce Site Hackathon',
+      title: 'Ecomart-Ecommerce Store',
       description: 'An e-commerce site developed for a hackathon using vanilla HTML, JavaScript, and MySQL.',
       technologies: ['HTML', 'JavaScript', 'MySQL'],
       githubLink: 'https://github.com/ukesh-dhakal/Saral-Hackathon',

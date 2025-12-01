@@ -19,7 +19,7 @@ export const ContactUs: React.FC = () => {
 
     try {
       await emailjs.sendForm(
-        'service_n48isse',
+        'service_pe0q4pe',
         'template_ta17ray',
         form.current,
         'mQ9vfBIRQCcrF8OSc'
