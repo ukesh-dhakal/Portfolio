@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import { Concert_One } from "next/font/google"; // Import Concert_One
 import "./globals.css";
 
@@ -13,12 +13,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  subsets: ["latin"],
+});
 
 const concertOne = Concert_One({
-  weight: "400", 
+  weight: "400",
   variable: "--font-concert-one",
   subsets: ["latin"],
-  display: "swap", 
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -38,7 +43,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="GScWdwaSpYwuwmD8xPTET3Xdol1-NRVzEdNWPweiGSo" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${concertOne.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${concertOne.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>
